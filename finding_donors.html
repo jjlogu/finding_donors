@@ -13248,13 +13248,14 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>I decided to try three ensemble methods, because ensemble methods use multiple learning algorithms to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone. (<a href="https://en.wikipedia.org/wiki/Ensemble_learning">https://en.wikipedia.org/wiki/Ensemble_learning</a>)</p>
+<p>I decided to try three ensemble methods, because ensemble methods use multiple learning algorithms to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone. As we have big dataset I think ensemble methods will give better performance. (<a href="https://en.wikipedia.org/wiki/Ensemble_learning">https://en.wikipedia.org/wiki/Ensemble_learning</a>)</p>
 <p><strong>1. Adaboost</strong></p>
 <p><strong>Application</strong> Used in face detection <a href="https://www.uni-obuda.hu/journal/Markoski_Ivankovic_Ratgeber_Pecev_Glusac_57.pdf">https://www.uni-obuda.hu/journal/Markoski_Ivankovic_Ratgeber_Pecev_Glusac_57.pdf</a></p>
 <p><strong>Strength</strong> it is fast and less prone to overfitting. it can be used with many other learning algorithm to improve performance  <a href="https://en.wikipedia.org/wiki/AdaBoost#Implementations">https://en.wikipedia.org/wiki/AdaBoost#Implementations</a></p>
 <p><strong>Weakness</strong> it is sensitive to noisy data and outliers</p>
 <p><strong>Reason</strong><br>
-    Very powerful classifier with less parameter to tweak.<br>
+    As we have class imbalanced in our dataset, I think this will perform  better.
+    <a href="https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/">https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/</a>
     <a href="http://www.nickgillian.com/wiki/pmwiki.php/GRT/AdaBoost">http://www.nickgillian.com/wiki/pmwiki.php/GRT/AdaBoost</a>
     <a href="http://user.ceng.metu.edu.tr/~tcan/ceng734_f1112/Schedule/adaboost.pdf">http://user.ceng.metu.edu.tr/~tcan/ceng734_f1112/Schedule/adaboost.pdf</a>
     <a href="https://www.quora.com/in/What-is-AdaBoost">https://www.quora.com/in/What-is-AdaBoost</a></p>
@@ -13275,7 +13276,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <p><strong>Strength</strong> Can handle different data type, Fast Training.</p>
 <p><strong>Weakness</strong> Time consuming, too many hyperparameters to tune.</p>
 <p><strong>Reason</strong>
-    I think this sequential ensemble classifier will better result on this given dataset.
+    Dataset have more number of features and class imblance, I think this will perform better.
     <a href="https://medium.com/mlreview/gradient-boosting-from-scratch-1e317ae4587d">https://medium.com/mlreview/gradient-boosting-from-scratch-1e317ae4587d</a></p>
 
 </div>
